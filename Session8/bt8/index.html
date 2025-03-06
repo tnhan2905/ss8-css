@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Input</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #333;
+        }
+        .search-box {
+            display: flex;
+            background: white;
+            padding: 10px;
+            border-radius: 25px;
+            width: 500px;
+        }
+        .search-box input {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 5px;
+        }
+        .search-box img {
+            width: 20px;
+            height: 20px;
+            margin: 0 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="search-box">
+        <img src="data:image/png;base64,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" alt="">
+        <input type="text" placeholder="Nhập từ khóa tìm kiếm">
+        <img src="./481854108_665573612801923_1211502605838840987_n.png" alt="">
+        <img src="./482143989_948309413745311_103979807988113041_n.png" alt="" style="width: 30px;">
+    </div>
+</body>
+</html>
